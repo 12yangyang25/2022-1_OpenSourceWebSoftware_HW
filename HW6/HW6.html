@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            width:1000px;
+        }
+        header {
+            background-color: #8CACB2;
+            height: 110px;
+        }
+
+        #logo {
+            float: left;
+            width: 200px;
+            height: 70px;
+            margin: 20px;
+            margin-right: 10px;
+        }
+
+        #headerText1 {
+            color: white;
+            font-size: 25px;
+            padding-top: 40px;
+            float: left;
+        }
+
+        header ul {
+            padding-top: 30px;
+            padding-left: 650px;
+
+        }
+
+        .menu {
+            display: inline-block;
+            border: none;
+            border-radius: 30%;
+            background-color: white;
+            width: 60px;
+            text-align: center;
+            margin-left: 10px;
+            margin-top: 15px;
+        }
+
+        .menu:hover {
+            background-color: grey;
+            border: none
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+
+        #headerText2 {
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        content {
+            width: 600px;
+            float: left;
+            margin:15px;
+        }
+
+        #promo {
+            background-color: #8CACB2;
+            width: 300px;
+            height: 70px;
+            text-align: center;
+            position: fixed;
+            top: 250px;
+            left: 700px;
+        }
+
+        #clinton, #selling, #roots, #mary, #feedback {
+            padding-top:15px;
+            padding-bottom: 15px;
+            border-bottom: 2px dotted black;
+            text-align: center;
+        }
+
+        .contentHeader{
+            font-size:23px;
+            margin-bottom:10px;
+        }
+
+        #inputFeedback{
+            width:400px;
+            height:200px;
+            display:block;
+            position:relative;
+            left:100px;
+        }
+
+        #submit{
+            background-color: #8CACB2;
+            border:none;
+        }
+
+        footer{
+            clear: both;
+            background-color: #8CACB2;
+            padding:15px;
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <img id="logo" src="logo.png">
+            <div id="headerText1">Premium bookShop</div>
+            <ul>
+                <li class="menu"><a href="">Home</a></li>
+                <li class="menu"><a href="">Books</a></li>
+                <li class="menu"><a href="">Gifts</a></li>
+            </ul>
+        </header>
+        <div id="headerText2">The Best Bookstore online<br> Over 6 million books ready for shipment within 24 hours and
+            4.5 million ebooks to download now.</div>
+        <hr>
+    </div>
+    <content>
+        <div id="clinton">
+            <div class="contentHeader">The President Is Missing</div>
+            <div>Please join us in welcoming President Bill Clinton and the world's bestselling author <br> James
+                Patterson to celebrate the release of their new novel. The President is<br>Missing. A limited number of
+                Wristbands for event access will be distributed<br> beginning at 9am the day of the event</div>
+                <img style=" margin-top:10px;"src="clinton.jpg">
+            </div>
+
+
+            <div id="roots">
+                <div class="contentHeader">True Roots: A mindful kitchen with More Than 100<br> Recipes Free of Gluten, Dairy, and Refined Sugar</div>
+                <div>In her first bool, kristin Cavallari shared her personal journey along with her tips on <br>everything from style to relationships. And now, with True Roots. Cavallari shows<br>you that improving the way you eat doesn't have to be difficult--a clean and toxin-<br>free diet can and should be fun, easy, and enjoyable. She learned the hard way that<br>dieting leads nowhere good, and that a clean lifestyle is the ticket to feeling and<br>being healthy.</div>
+                <img style=" margin-top:10px;" src="roots.jpg">
+            </div>
+
+
+            <div id="selling">
+                <div class="contentHeader">Selling Boldly: Applying the New Science of Positive<br> Psychology to Dramatically Increase Your
+                    Confidence,<br> Happiness, and Sales</div>
+                <div>Fear is the reason most salespeople don't like to pick up the phone. Fear is the<br>reason we don't
+                    ask for the business more, even though our customers want to buy<br> from us.</div>
+                <img style=" margin-top:10px;" src="selling.jpg">
+            </div>
+
+            <div id="mary">
+                <div class="contentHeader">I've Got My Eyes on You(B&N Exclusive Edition)</div>
+                <div>A new thriller from #1 New York Times bestselling author and "Queen of Suspens"<br>Mary Higgins Clark. After a party when her parents are away, eighteen-year-old Kerry<br>Dowling is found fully dressed at the bottom of the family pool. The immediate<br>suspect is her boyfriend who had a bitter argument with her at the party. Then there<br>is a twenty-year-old neighbor who was angry because she didn't invite him to the party.</div>
+                <img style=" margin-top:10px;" src="mary.jpg">
+            </div>
+
+            <div id="feedback">
+                <div>Send your feedback to us</div>
+                <input id="inputFeedback" type="text">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+    </content>
+
+    <div id="promo">
+        10% OFF $35 + | 15% OFF $60+<br> *USE CODE:HAPPYAPRIL
+    </div>
+
+    <footer>
+        <div>Barnes & Noble Booksellers, Inc., Legal Department<br>122 Fifth Avenue<br>New York. NY 10011<br>Fax: (212) 463-5683<br><br>Location: <a href=""><i>Click Map</i></a></div>
+    </footer>
+</body>
+
+</html>
