@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var num = [];
+
+        function stack(){
+            num.push(document.getElementById("inputNum").value);
+            
+        }
+
+        function show() {
+            for(i = 0; i< num.length; i++){
+                document.write(num[i] + "<br>");
+            }
+        }
+    </script>
+
+    <label>Input: </label> <input id="inputNum">
+    <button onclick="stack()">Stack</button> <br>
+    <button onClick="show()">Show</button>
+</body>
+
+</html>
