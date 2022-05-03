@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border:1px solid blue;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div>This is quote tag <q>quote</q><br>
+        HTML에서 주석은 &lt;!-- --&gt;  <!--html에서 special character 나타내는 법-->
+    </div>
+
+    <table>
+        <tr>
+            <td>testText</td>
+            <td>testText</td>
+            <td>testText</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">colsapn</td>
+            <td rowspan="2">rowspan</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:red" >testText</td>
+            <td>testText</td>
+
+        </tr>
+    </table>
+
+    <form>
+        <input type="checkbox" /> 1번 <br>
+        <input type="checkbox" /> 2번 <br>
+        <input type="checkbox" /> 3번 <br>
+    </form>
+
+    <div id="target" onclick="" style="text-align:right">text align-justify test</div>
+
+    <script>
+        document.querySelector("#target").style.backgroundColor="red";
+    </script>
+</body>
+
+</html>
