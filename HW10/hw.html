@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div id="map" style="width:800px; height: 500px"></div>
+
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var myCenter = new google.maps.LatLng(36.6316385, 127.4570573); //중문 입구
+            var mapOptions = {
+                center: myCenter,
+                zoom: 17
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            var markers = [
+                new google.maps.LatLng(36.6331155, 127.4579934), //지지고
+                new google.maps.LatLng(36.6321719, 127.4593123), //한끼
+                new google.maps.LatLng(36.6326434, 127.4568873), //프로마치
+                new google.maps.LatLng(36.6322930, 127.4570715), //고씨네
+                new google.maps.LatLng(36.6332697, 127.4604359), //서브웨이
+                new google.maps.LatLng(36.6326860, 127.4589604), //피자웨이브
+                new google.maps.LatLng(36.6326062, 127.4585493), //이뿌롬
+                new google.maps.LatLng(36.6330823, 127.4588159), //정통집
+                new google.maps.LatLng(36.6341608, 127.4626943), //밀방
+                new google.maps.LatLng(36.6340252, 127.4609948), //장순국
+                new google.maps.LatLng(36.6333555, 127.4586110) //누홀
+            ];
+
+            var storeInfo = [['지지고', '⭐️⭐️⭐️⭐️'], ['한끼', '⭐️⭐️⭐️⭐️'], ['프로마치', '⭐️⭐️⭐️'], ['고씨네', '⭐️⭐️⭐️⭐️'], ['서브웨이', '⭐️⭐️⭐️⭐️⭐️'], ['피자웨이브', '⭐️⭐️⭐️⭐️'], ['2FROM', '⭐️⭐️⭐️⭐️'], ['정통집', '⭐️⭐️⭐️'], ['밀방', '⭐️⭐️⭐️⭐️⭐️'], ['장순국', '⭐️⭐️⭐️⭐️'], ['누구나홀딱반한닭', '⭐️⭐️⭐️⭐️⭐️']]
+
+            var marker, i;
+
+            for (i = 0; i < markers.length; i++) {
+                marker = new google.maps.Marker({
+                    position: markers[i],
+                    map: map
+                });
+
+                infowindow = new google.maps.InfoWindow({
+                    content:
+                        "<p>" + storeInfo[i][0] + "</p>" + "<br>" + "<p>" + storeInfo[i][1] + "</p>"
+                });
+                infowindow.open(map,marker);
+            }
+
+            var middleGate = new google.maps.Circle({
+                center: myCenter,
+                radius: 50,
+                strokeColor: "#FF5733",
+                strokeOpacity: 0.5,
+                strokeWeight: 3,
+                fillColor: "#FF5733",
+                fillOpacity: 0.3
+            });
+            middleGate.setMap(map);
+        }
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfS5l6zDcgd6vaM-9082Zx_sTRAq5h3mA&callback=myMap"></script>
+</body>
+
+</html>
